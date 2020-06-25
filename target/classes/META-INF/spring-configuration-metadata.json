@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "spring.cache",
+      "type": "com.hackernews.assignment.config.CacheConfigurationProperties",
+      "sourceType": "com.hackernews.assignment.config.CacheConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.cache.cache-expirations",
+      "type": "java.util.Map<java.lang.String,java.lang.Long>",
+      "sourceType": "com.hackernews.assignment.config.CacheConfigurationProperties"
+    },
+    {
+      "name": "spring.cache.redis-host",
+      "type": "java.lang.String",
+      "sourceType": "com.hackernews.assignment.config.CacheConfigurationProperties"
+    },
+    {
+      "name": "spring.cache.redis-port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.hackernews.assignment.config.CacheConfigurationProperties"
+    },
+    {
+      "name": "spring.cache.timeout-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "com.hackernews.assignment.config.CacheConfigurationProperties"
+    }
+  ],
+  "hints": []
+}

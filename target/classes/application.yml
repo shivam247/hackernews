@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+# Hacker news URL
+hackernews:
+  baseurl: https://hacker-news.firebaseio.com
+  topstories:
+    url: ${hackernews.baseurl}/v0/topstories.json
+  item:
+    url: ${hackernews.baseurl}/v0/item/
+  user:
+    url: ${hackernews.baseurl}/v0/user/
+
+# Thread Pool Config
+threadpool:
+  corePoolSize: 100
+  maxPoolSize: 120
+  queueCapacity: 50
+  keepAliveSec: 60
+ 
+
+# Redis Config
+spring:
+  cache:
+    type: redis
+    timeoutSeconds: 0
+    cacheExpirations:
+      topstories: 600
+      comments: 600
+      paststories : 600
+      allPastStories: 0
+      
+  redis:
+    host: localhost
+    port: 6379
